@@ -1,4 +1,3 @@
-
 import time
 
 # Import the ADXL345 module.
@@ -135,10 +134,13 @@ def AFS(a, pwm, dep, phi):
       break
   print (phiservo)
   
-  main (): 
-    a = ace
-    b = 1711
-    c = 6
-    d = 10
+main (): 
+  a = ace
+  b = 1711
+  c = 6
+  d = 10
     
     fins = AFS(a,b,c,d)
+    
+if__name__ == "__main__":
+   main()
