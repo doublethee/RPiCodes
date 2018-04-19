@@ -135,7 +135,7 @@ def AFS(a, pwm, dep, phi):
       break
   print (phiservo)
   
-  main: 
+  main (): 
     a = ace
     b = 1711
     c = 6
