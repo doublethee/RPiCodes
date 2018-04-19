@@ -1,3 +1,25 @@
+
+import time
+
+# Import the ADXL345 module.
+import Adafruit_ADXL345
+
+def ace ()
+  # Create an ADXL345 instance.
+  accel = Adafruit_ADXL345.ADXL345()
+
+  while True:
+      # Read the X, Y, Z axis acceleration values and print them.
+      x, y, z = accel.read()
+      print('X={0}, Y={1}, Z={2}'.format(x, y, z))
+      # Wait half a second and repeat.
+      time.sleep(1.5)
+
+  #print('Printing X, Y, Z axis values, press Ctrl-C to quit...')
+  return(x)
+
+
+
 def AFS(a, pwm, dep, phi):
   import numpy as np 
   table =np.genfromtxt("SAMPLE/PWM&Thrust.txt")
@@ -112,3 +134,11 @@ def AFS(a, pwm, dep, phi):
       phiservo = angyaw
       break
   print (phiservo)
+  
+  main: 
+    a = ace
+    b = 1711
+    c = 6
+    d = 10
+    
+    fins = AFS(a,b,c,d)
