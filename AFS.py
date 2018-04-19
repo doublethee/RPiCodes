@@ -141,5 +141,5 @@ def main ():
   d = 10  
   fins = AFS(a,b,c,d)
     
-if__name__ == "__main__":
+if __name__ == "__main__":
   main()
